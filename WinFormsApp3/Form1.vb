@@ -4,7 +4,8 @@
     Dim MultiText As String
     Dim CompareResult As Integer
     Dim ResultInput As Integer
-    Dim StreakCounter As Integer
+    Dim StreakCounter As Integer = 0
+
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         skrivi()
@@ -40,15 +41,22 @@
             Streak.Text = "streak: " & CStr(StreakCounter)
 
         Else
+
+            ResultView.Items.Add(StreakCounter)
+
             Result.BackColor = Color.Red
 
             StreakCounter = 0
 
             Streak.Text = "streak: " & CStr(StreakCounter)
 
+
         End If
         InputBox.Text = ""
         skrivi()
     End Sub
 
+    Private Sub ResultView_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ResultView.SelectedIndexChanged
+
+    End Sub
 End Class
