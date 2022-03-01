@@ -1,4 +1,6 @@
 ﻿Public Class Form1
+
+    Dim Text As String
     Private Sub Multiplikation_Click(sender As Object, e As EventArgs) Handles Multiplikation.Click
 
     End Sub
