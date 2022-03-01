@@ -4,6 +4,7 @@
     Dim MultiText As String
     Dim CompareResult As Integer
     Dim ResultInput As Integer
+    Dim StreakCounter As Integer
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Randomize()
@@ -26,7 +27,24 @@
     End Sub
 
     Private Sub Calculate_Click(sender As Object, e As EventArgs) Handles Calculate.Click
+        ResultInput = InputBox.Text
 
+        If ResultInput = CompareResult Then
+            Result.BackColor = Color.Green
+
+            StreakCounter += 1
+
+            Streak.Text = "streak: " & CStr(StreakCounter)
+
+        Else
+            Result.BackColor = Color.Red
+
+            StreakCounter = 0
+
+            Streak.Text = "streak: " & CStr(StreakCounter)
+
+        End If
+        InputBox.Text = ""
     End Sub
 
 End Class
