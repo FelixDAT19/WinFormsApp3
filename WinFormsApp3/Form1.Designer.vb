@@ -65,7 +65,7 @@ Partial Class Form1
         'Result
         '
         Me.Result.Location = New System.Drawing.Point(480, 143)
-        Me.Result.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Result.Margin = New System.Windows.Forms.Padding(4)
         Me.Result.Name = "Result"
         Me.Result.Size = New System.Drawing.Size(238, 163)
         Me.Result.TabIndex = 3
@@ -109,6 +109,7 @@ Partial Class Form1
         '
         'Form1
         '
+        Me.AcceptButton = Me.Calculate
         Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 32.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1132, 363)
