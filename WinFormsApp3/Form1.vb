@@ -7,6 +7,11 @@
     Dim StreakCounter As Integer
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        skrivi()
+
+    End Sub
+
+    Private Sub skrivi()
         Randomize()
         tal1 = Int((10 * Rnd()) + 1)
         tal2 = Int((10 * Rnd()) + 1)
@@ -14,8 +19,6 @@
         Multiplikation.Text = MultiText
         CompareResult = tal1 * tal2
     End Sub
-
-
 
 
     Private Sub Multiplikation_Click(sender As Object, e As EventArgs) Handles Multiplikation.Click
@@ -45,6 +48,7 @@
 
         End If
         InputBox.Text = ""
+        skrivi()
     End Sub
 
 End Class
