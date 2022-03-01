@@ -6,6 +6,8 @@
         tal2 = Int((10 * Rnd()) + 1)
     End Sub
 
+
+    Dim Text As String
     Private Sub Multiplikation_Click(sender As Object, e As EventArgs) Handles Multiplikation.Click
 
     End Sub
