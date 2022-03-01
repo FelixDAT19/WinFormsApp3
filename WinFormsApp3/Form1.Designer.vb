@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.InputBox = New System.Windows.Forms.TextBox()
         Me.Multiplikation = New System.Windows.Forms.Label()
+        Me.Calculate = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'InputBox
@@ -42,11 +43,21 @@ Partial Class Form1
         Me.Multiplikation.TabIndex = 1
         Me.Multiplikation.Text = "Multi"
         '
+        'Calculate
+        '
+        Me.Calculate.Location = New System.Drawing.Point(48, 233)
+        Me.Calculate.Name = "Calculate"
+        Me.Calculate.Size = New System.Drawing.Size(279, 72)
+        Me.Calculate.TabIndex = 2
+        Me.Calculate.Text = "Räkna"
+        Me.Calculate.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 32.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Calculate)
         Me.Controls.Add(Me.Multiplikation)
         Me.Controls.Add(Me.InputBox)
         Me.Name = "Form1"
@@ -58,4 +69,5 @@ Partial Class Form1
 
     Friend WithEvents InputBox As TextBox
     Friend WithEvents Multiplikation As Label
+    Friend WithEvents Calculate As Button
 End Class
