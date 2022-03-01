@@ -33,7 +33,7 @@ Partial Class Form1
         'InputBox
         '
         Me.InputBox.Location = New System.Drawing.Point(26, 67)
-        Me.InputBox.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.InputBox.Margin = New System.Windows.Forms.Padding(1)
         Me.InputBox.Name = "InputBox"
         Me.InputBox.Size = New System.Drawing.Size(152, 23)
         Me.InputBox.TabIndex = 0
@@ -51,7 +51,7 @@ Partial Class Form1
         'Calculate
         '
         Me.Calculate.Location = New System.Drawing.Point(26, 109)
-        Me.Calculate.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.Calculate.Margin = New System.Windows.Forms.Padding(1)
         Me.Calculate.Name = "Calculate"
         Me.Calculate.Size = New System.Drawing.Size(150, 34)
         Me.Calculate.TabIndex = 2
@@ -61,7 +61,7 @@ Partial Class Form1
         'Result
         '
         Me.Result.Location = New System.Drawing.Point(258, 67)
-        Me.Result.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Result.Margin = New System.Windows.Forms.Padding(2)
         Me.Result.Name = "Result"
         Me.Result.Size = New System.Drawing.Size(128, 76)
         Me.Result.TabIndex = 3
@@ -87,7 +87,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Calculate)
         Me.Controls.Add(Me.Multiplikation)
         Me.Controls.Add(Me.InputBox)
-        Me.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.Margin = New System.Windows.Forms.Padding(1)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.Result, System.ComponentModel.ISupportInitialize).EndInit()
