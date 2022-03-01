@@ -14,8 +14,8 @@
 
     Private Sub skrivi()
         Randomize()
-        tal1 = Int((10 * Rnd()) + 1)
-        tal2 = Int((10 * Rnd()) + 1)
+        tal1 = Int((12 * Rnd()) + 0)
+        tal2 = Int((12 * Rnd()) + 0)
         MultiText = CStr(tal1) & " * " & CStr(tal2) & " ="
         Multiplikation.Text = MultiText
         CompareResult = tal1 * tal2
