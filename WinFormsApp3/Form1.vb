@@ -5,7 +5,7 @@
     Dim CompareResult As Integer
     Dim ResultInput As Integer
     Dim StreakCounter As Integer = 0
-
+    Dim CounterHS As Integer = 0
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         skrivi()
@@ -40,7 +40,13 @@
 
             Streak.Text = "streak: " & CStr(StreakCounter)
 
+            CounterHS += 1
+
         Else
+
+            If CounterHS >= numHighscore.Text Then
+                numHighscore.Text = CounterHS
+            End If
 
             ResultView.Items.Add(StreakCounter)
 

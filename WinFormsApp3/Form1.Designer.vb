@@ -31,6 +31,7 @@ Partial Class Form1
         Me.lblhighscore = New System.Windows.Forms.Label()
         Me.ResultView = New System.Windows.Forms.ListView()
         Me.ColumnHeader1 = New System.Windows.Forms.ColumnHeader()
+        Me.numHighscore = New System.Windows.Forms.Label()
         CType(Me.Result, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -87,9 +88,9 @@ Partial Class Form1
         Me.lblhighscore.Location = New System.Drawing.Point(480, 108)
         Me.lblhighscore.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblhighscore.Name = "lblhighscore"
-        Me.lblhighscore.Size = New System.Drawing.Size(121, 32)
+        Me.lblhighscore.Size = New System.Drawing.Size(126, 32)
         Me.lblhighscore.TabIndex = 5
-        Me.lblhighscore.Text = "Highscore"
+        Me.lblhighscore.Text = "Highscore:"
         '
         'ResultView
         '
@@ -107,12 +108,22 @@ Partial Class Form1
         '
         Me.ColumnHeader1.Text = "Resultat"
         '
+        'numHighscore
+        '
+        Me.numHighscore.AutoSize = True
+        Me.numHighscore.Location = New System.Drawing.Point(614, 108)
+        Me.numHighscore.Name = "numHighscore"
+        Me.numHighscore.Size = New System.Drawing.Size(27, 32)
+        Me.numHighscore.TabIndex = 7
+        Me.numHighscore.Text = "0"
+        '
         'Form1
         '
         Me.AcceptButton = Me.Calculate
         Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 32.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1132, 363)
+        Me.Controls.Add(Me.numHighscore)
         Me.Controls.Add(Me.ResultView)
         Me.Controls.Add(Me.lblhighscore)
         Me.Controls.Add(Me.Streak)
@@ -137,4 +148,5 @@ Partial Class Form1
     Friend WithEvents lblhighscore As Label
     Friend WithEvents ResultView As ListView
     Friend WithEvents ColumnHeader1 As ColumnHeader
+    Friend WithEvents numHighscore As Label
 End Class
