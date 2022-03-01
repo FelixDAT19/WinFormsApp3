@@ -22,16 +22,16 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.InputBox = New System.Windows.Forms.TextBox()
         Me.Multiplikation = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'InputBox
         '
-        Me.TextBox1.Location = New System.Drawing.Point(48, 143)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(279, 39)
-        Me.TextBox1.TabIndex = 0
+        Me.InputBox.Location = New System.Drawing.Point(48, 143)
+        Me.InputBox.Name = "InputBox"
+        Me.InputBox.Size = New System.Drawing.Size(279, 39)
+        Me.InputBox.TabIndex = 0
         '
         'Multiplikation
         '
@@ -48,7 +48,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Multiplikation)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.InputBox)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -56,6 +56,6 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents InputBox As TextBox
     Friend WithEvents Multiplikation As Label
 End Class
