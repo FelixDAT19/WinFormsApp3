@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,14 +20,13 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.InputBox = New System.Windows.Forms.TextBox()
         Me.Multiplikation = New System.Windows.Forms.Label()
         Me.Calculate = New System.Windows.Forms.Button()
         Me.Result = New System.Windows.Forms.PictureBox()
         Me.Streak = New System.Windows.Forms.Label()
-        Me.Txt23 = New System.Windows.Forms.TextBox()
         CType(Me.Result, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -78,19 +77,11 @@ Partial Class Form1
         Me.Streak.TabIndex = 4
         Me.Streak.Text = "Streak:"
         '
-        'Txt23
-        '
-        Me.Txt23.Location = New System.Drawing.Point(200, 176)
-        Me.Txt23.Name = "Txt23"
-        Me.Txt23.Size = New System.Drawing.Size(100, 23)
-        Me.Txt23.TabIndex = 5
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(430, 211)
-        Me.Controls.Add(Me.Txt23)
         Me.Controls.Add(Me.Streak)
         Me.Controls.Add(Me.Result)
         Me.Controls.Add(Me.Calculate)
@@ -110,5 +101,4 @@ Partial Class Form1
     Friend WithEvents Calculate As Button
     Friend WithEvents Result As PictureBox
     Friend WithEvents Streak As Label
-    Friend WithEvents Txt23 As TextBox
 End Class
